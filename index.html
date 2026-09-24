@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Student Information</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="card">
+
+        <!-- LEFT SIDE -->
+        <div class="image-section">
+            <img src="study-image.jpg" alt="Study setup">
+        </div>
+
+
+        <!-- RIGHT SIDE -->
+        <div class="form-section">
+
+            <h1>Student Info</h1>
+
+            <form id="studentForm">
+
+                <!-- STUDENT ID -->
+                <div class="input-group">
+                    <span class="icon">♙</span>
+
+                    <input
+                        type="text"
+                        id="studentId"
+                        placeholder="Student ID"
+                    >
+                </div>
+
+                <small id="studentIdError" class="error-message"></small>
+
+
+                <!-- FULL NAME -->
+                <div class="input-group">
+                    <span class="icon">♙</span>
+
+                    <input
+                        type="text"
+                        id="fullName"
+                        placeholder="Full Name"
+                    >
+                </div>
+
+                <small id="fullNameError" class="error-message"></small>
+
+                <!-- EMAIL -->
+                <div class="input-group">
+                    <span class="icon">✉</span>
+
+                    <input
+                        type="email"
+                        id="email"
+                        placeholder="Email Address"
+                    >
+                </div>
+
+                <small id="emailError" class="error-message"></small>
+
+
+                <!-- COURSE -->
+                <div class="input-group">
+                    <span class="icon">▣</span>
+
+                    <select id="course">
+                        <option value="">Course</option>
+                        <option value="BS Information Technology">
+                            BS Information Technology
+                        </option>
+                        <option value="BS Computer Science">
+                            BS Computer Science
+                        </option>
+                        <option value="BS Information Systems">
+                            BS Information Systems
+                        </option>
+                    </select>
+                </div>
+
+                <small id="courseError" class="error-message"></small>
+
+
+                <!-- YEAR LEVEL -->
+                <div class="input-group">
+                    <span class="icon">▣</span>
+
+                    <select id="yearLevel">
+                        <option value="">Year Level</option>
+                        <option value="1st Year">1st Year</option>
+                        <option value="2nd Year">2nd Year</option>
+                        <option value="3rd Year">3rd Year</option>
+                        <option value="4th Year">4th Year</option>
+                    </select>
+                </div>
+
+                <small id="yearLevelError" class="error-message"></small>
+                
+                <!-- SUBMIT -->
+                <button type="submit">
+                    Submit
+                </button>
+
+
+                <!-- SUCCESS MESSAGE -->
+                <div id="successMessage"></div>
+
+            </form>
+
+        </div>
+
+    </div>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>
